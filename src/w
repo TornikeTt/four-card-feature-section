@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/* font-family: 'Poppins', sans-serif; */
 
 .App {
   font-family: 'Poppins', sans-serif; 
@@ -59,6 +60,7 @@
         width: 340px;
     }
 }
+
 /* Header end */
 
 
@@ -104,35 +106,38 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3 , 370px);
-    grid-template-rows: repeat(25 , 22px);
-    grid-column-gap: 30px;
+    grid-template-rows: repeat(25 , 20px);
 }
 
 .Team {
+    width: 370px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 13;
 }
 
 .Calculator {
+    width: 370px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-column-start: 3;
-    grid-row-start: 8;
-    grid-row-end: 20;
+    grid-row-start: 5;
 }
 
 .Supervisor { 
+    width: 370px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    grid-row-start: 8;
-    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-row-start: 5;
 }
 
 .Karma { 
+    width: 370px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     grid-column-start: 2;
     grid-row-start: 14;
-    grid-row-end: 26;
 }
 
 .informatioin { 
@@ -159,84 +164,25 @@
    bottom: 25px;
 }
 
-/* for netbook */
 
-@media (max-height: 667px) {
+
+/*@media (max-height: 667px){
     .App {
       justify-content: space-around;
     }
 
-    .header-text {
-        margin-top: 30px;
-    }
-
     .grid-container {
-        grid-template-rows: repeat(25 , 20px);
-        margin-top: 30px;
+        margin-top: 10px;
+        grid-row-gap: 0;
     }
 
-    .Team {
-        grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: 12;
-    }
-
-    .Calculator {
-        grid-row-start: 7;
-        grid-row-end: 18;
-    }
-
-    .Supervisor { 
-        grid-row-start: 7;
-        grid-row-end: 18;
+    .Team , .Calculator, .Supervisor {
+        height: 210px;
     }
 
     .Karma { 
-        grid-column-start: 2;
-        grid-row-start: 13;
-        grid-row-end: 24;
+        height: 210px;
+        grid-row-start: 9;
     }
 }
-
-/* for mobile */
-
-@media (max-width: 375px) { 
-    .App { 
-        overflow: visible;
-        height: 100%;
-    }
-
-    .grid-container {
-        grid-template-columns: 320px;
-        grid-template-rows: repeat(55 , 22px);
-        grid-column-gap: 30px;
-        margin-top: 0px;
-    }
-
-    .Team {
-        grid-column-start: 1;
-        grid-row-start: 15;
-        grid-row-end: 27;
-    }
-
-    .Calculator {
-        grid-column-start: 1;
-        grid-row-start: 41;
-        grid-row-end: 53;
-    }
-
-    .Supervisor { 
-        grid-row-start: 2;
-        grid-row-end: 14;
-    }
-
-    .Karma { 
-        grid-column-start: 1;
-        grid-row-start: 28;
-        grid-row-end: 40;
-    }
-}
-
-
-
-
+*/
