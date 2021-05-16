@@ -5,7 +5,7 @@ function Boxs() {
 
     const show = boxDate.map((data) => { 
         return ( 
-            <div className={ data.title }>
+            <div className={ data.title } key={data.id}>
                 <div className={ "topColor" + data.id } ></div>
                 <div className="informatioin">
                     <h3>{ data.title }</h3>
@@ -13,7 +13,7 @@ function Boxs() {
                     <img 
                     className="image" 
                     src={ data.image } 
-                    alt="image for Team-bulder boxs" />
+                    alt="grid boxses" />
                 </div>
             </div>
         )

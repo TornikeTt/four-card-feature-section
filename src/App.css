@@ -13,7 +13,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* Header start */
@@ -36,7 +36,6 @@
 
 .header-text p {
   width: 550px;
-  margin: auto;
   color: grey;
   margin-top: 10px;
 }
@@ -162,39 +161,29 @@
 /* for netbook */
 
 @media (max-height: 667px) {
-    .App {
-      justify-content: space-around;
-    }
-
-    .header-text {
-        margin-top: 30px;
-    }
-
     .grid-container {
-        grid-template-rows: repeat(25 , 20px);
-        margin-top: 30px;
+        grid-template-rows: repeat(24 , 20px);
     }
 
     .Team {
         grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 13;
     }
-
-    .Calculator {
-        grid-row-start: 7;
-        grid-row-end: 18;
+.Calculator {
+        grid-row-start: 8;
+        grid-row-end: 19;
     }
 
     .Supervisor { 
-        grid-row-start: 7;
-        grid-row-end: 18;
+        grid-row-start: 8;
+        grid-row-end: 19;
     }
 
     .Karma { 
         grid-column-start: 2;
-        grid-row-start: 13;
-        grid-row-end: 24;
+        grid-row-start: 14;
+        grid-row-end: 25;
     }
 }
 
